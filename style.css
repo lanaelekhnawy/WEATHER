@@ -1,0 +1,289 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  
+   background: url("Images/mohammad-minhaz-PmPJMbFJiXM-unsplash.jpg") center/cover no-repeat;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  top: 0;
+  width: 100%;
+  background-color: rgba(209, 226, 211, 0.4); 
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 20px;
+  
+}
+
+.nav-links li:hover,
+.nav-links .active {
+  border: 1px solid #D9A89E;
+  color: #F7FAF9;
+}
+
+.hero {
+  height: 350px;
+  position: relative;
+}
+
+.overlay {
+  
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  width: 60%;
+  display: flex;
+  background-color: #B5C9C3;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #0097a7;
+}
+.weather-container {
+  width: 65%;
+  margin: -70px auto 50px auto;
+  display: grid;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px #fffcfc66;
+  display: flex;
+
+}
+.weather-card {
+ 
+  padding: 30px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+   background-color: rgba(65, 130, 192, 0.4);  
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
+  padding: 15px 30px;
+ 
+}
+.weather-card-2{
+  background-color: #92b6d9;
+  padding: 30px;
+  height: 450px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+   background-color: rgba(9, 51, 14, 0.4);  
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
+  padding: 15px 30px;
+ 
+}
+.weather-card-3{
+  background-color: #0c559d;
+  padding: 30px;
+  height: 450px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(71, 110, 91, 0.4);   
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
+  padding: 15px 30px;
+ 
+}
+
+.card-body h1 {
+  font-size: 70px;
+  margin: 10px 0;
+}
+
+.card-body h2 {
+  font-size: 40px;
+  margin: 10px 0;
+  
+}
+
+.card-body img {
+  width: 70px;
+}
+
+
+
+.footer {
+  background-color:#255C57;
+  padding: 30px 0;
+  color: #fffbfb;
+  
+
+}
+
+ .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.social-icons {
+  margin: 50px;
+ 
+
+}
+
+.social-icons a {
+  color:#009AD8;
+  padding: 20px;
+  font-size: 18px;
+  transition: 0.3s;
+
+color: #009AD8;
+  background-color: #1E202B;
+  width: 20px;
+    height: 20px;
+    
+    border-radius: 50%; 
+
+text-decoration: none;
+
+}
+
+.social-icons a:hover {
+  color: #dbddea;
+  background-color: #009AD8;
+  
+}
+
+.footer .copyright a {
+  color: #f1eaeb;
+  padding: 0;
+} 
+
+
+
+.subscribe-box {
+  width: 40%;
+  display: flex;
+  background-color:#60756E;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(16, 7, 7);
+  font-size: 16px;
+}
+input::placeholder{
+  color: #082038;
+}
+.subscribe-box button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #00bcd4;
+  color: rgb(14, 2, 2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe-box button:hover {
+  background-color: #0097a7;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .search-box {
+    width: 95%;
+  }
+
+  .weather-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-box {
+    width: 95%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .weather-container {
+    gap: 15px;
+  }
+}
